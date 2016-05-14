@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="MAX30100-SMD12">
+<smd name="PGND" x="-1.075" y="0" dx="0.5" dy="0.35" layer="1"/>
+<smd name="VDD" x="1.075" y="0" dx="0.5" dy="0.35" layer="1"/>
+<smd name="IR_DRV" x="-1.075" y="-0.8" dx="0.5" dy="0.35" layer="1"/>
+<smd name="IR_LED+" x="1.075" y="-0.8" dx="0.5" dy="0.35" layer="1"/>
+<smd name="R_LED+" x="1.075" y="-1.6" dx="0.5" dy="0.35" layer="1"/>
+<smd name="R_DRV" x="-1.075" y="-1.6" dx="0.5" dy="0.35" layer="1"/>
+<smd name="SDA" x="-1.075" y="0.8" dx="0.5" dy="0.35" layer="1"/>
+<smd name="GND" x="1.075" y="0.8" dx="0.5" dy="0.35" layer="1"/>
+<smd name="SCL" x="-1.075" y="1.6" dx="0.5" dy="0.35" layer="1"/>
+<smd name="INT" x="1.075" y="1.6" dx="0.5" dy="0.35" layer="1"/>
+<smd name="NC2" x="-1.075" y="-2.4" dx="0.5" dy="0.35" layer="1"/>
+<smd name="NC3" x="1.075" y="-2.4" dx="0.5" dy="0.35" layer="1"/>
+<smd name="NC1" x="-1.075" y="2.4" dx="0.5" dy="0.35" layer="1"/>
+<smd name="NC4" x="1.075" y="2.4" dx="0.5" dy="0.35" layer="1"/>
+<text x="-3" y="3.15" size="0.254" layer="25" ratio="3">Purdue MIND
+Sriram Boppana Vs. 1</text>
+<dimension x1="-1.075" y1="2.825" x2="1.075" y2="2.825" x3="0" y3="-4.225" textsize="0.254" textratio="3" layer="25" dtype="horizontal" width="0.015" visible="yes"/>
+<dimension x1="1.95" y1="-1.6" x2="1.975" y2="-2.4" x3="4.675" y3="-2" textsize="0.254" textratio="3" layer="25" dtype="vertical" width="0.015" visible="yes"/>
+<dimension x1="-2.125" y1="-2.4" x2="-1.925" y2="2.4" x3="-5.9" y3="0" textsize="0.254" textratio="3" layer="25" dtype="vertical" width="0.015" visible="yes"/>
+<wire x1="-1.4" y1="2.8" x2="1.4" y2="2.8" width="0.127" layer="25"/>
+<wire x1="1.4" y1="2.8" x2="1.4" y2="-2.8" width="0.127" layer="25"/>
+<wire x1="1.4" y1="-2.8" x2="-1.4" y2="-2.8" width="0.127" layer="25"/>
+<wire x1="-1.4" y1="2.8" x2="-1.4" y2="-2.8" width="0.127" layer="25"/>
+<dimension x1="1.4" y1="2.8" x2="2.15" y2="-2.8" x3="2" y3="0" textsize="0.254" textratio="3" layer="25" dtype="vertical" width="0.015" visible="yes"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX30100-SMD12">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="SCL" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="SDA" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="PGND" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="IR_DRV" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="R_DRV" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="R_LED+" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="IR_LED+" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="INT" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX30100-SMD12">
+<gates>
+<gate name="G$1" symbol="MAX30100-SMD12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAX30100-SMD12">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="IR_DRV" pad="IR_DRV"/>
+<connect gate="G$1" pin="IR_LED+" pad="IR_LED+"/>
+<connect gate="G$1" pin="PGND" pad="PGND"/>
+<connect gate="G$1" pin="R_DRV" pad="R_DRV"/>
+<connect gate="G$1" pin="R_LED+" pad="R_LED+"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
