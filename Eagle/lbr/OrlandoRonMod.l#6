@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1534,6 +1534,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/40039E.pdf</description>
 <wire x1="4.15" y1="0.25" x2="-0.05" y2="0.25" width="0.05" layer="21"/>
 <wire x1="-0.05" y1="0.25" x2="-0.05" y2="4.2" width="0.05" layer="21"/>
 <circle x="-0.4318" y="4.5466" radius="0.08031875" width="0.127" layer="21"/>
+<text x="0" y="4.445" size="0.508" layer="25">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.508" layer="27">&gt;VALUE</text>
 </package>
 <package name="POT-J-LEAD">
 <polygon width="0.127" layer="21">
@@ -2831,8 +2833,12 @@ Source: www.ilsiamerica.com .. C1 IXF Series.pdf</description>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 <package name="HOLE">
-<pad name="P$1" x="-1.151" y="0" drill="0.7112"/>
-<pad name="P$2" x="1.135" y="0" drill="0.7112"/>
+<pad name="P$1" x="-1.151" y="0" drill="1.016" diameter="1.778"/>
+<pad name="P$2" x="1.135" y="0" drill="1.016" diameter="1.778"/>
+<text x="-2.54" y="1.27" size="0.762" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.905" size="0.762" layer="27">&gt;VALUE</text>
+<text x="-3.175" y="0" size="1.016" layer="21">+</text>
+<text x="2.54" y="0" size="1.016" layer="21">-</text>
 </package>
 <package name="P2-38-17">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
@@ -2869,6 +2875,8 @@ Source: www.ilsiamerica.com .. C1 IXF Series.pdf</description>
 <package name="CA-301">
 <pad name="1" x="0" y="0" drill="0.4" shape="octagon"/>
 <pad name="2" x="1.2" y="0" drill="0.4" shape="octagon"/>
+<text x="-1.27" y="1.27" size="0.635" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.905" size="0.635" layer="25">&gt;Value</text>
 </package>
 <package name="HC49/S">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
@@ -4415,6 +4423,8 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="C1" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="C2" x="15.24" y="-10.16" length="middle" rot="R180"/>
 <pin name="VOUT" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">LMP91000</text>
 </symbol>
 <symbol name="R-TRIM-1">
 <wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -6953,14 +6963,14 @@ Source: www.vanlong.com</description>
 </deviceset>
 <deviceset name="BATT-CONNECT">
 <gates>
-<gate name="G$2" symbol="PS" x="5.08" y="2.54"/>
-<gate name="G$1" symbol="PS" x="-5.08" y="2.54"/>
+<gate name="-" symbol="PS" x="5.08" y="2.54"/>
+<gate name="+" symbol="PS" x="-5.08" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="HOLE">
 <connects>
-<connect gate="G$1" pin="TP" pad="P$1"/>
-<connect gate="G$2" pin="TP" pad="P$2"/>
+<connect gate="+" pin="TP" pad="P$1"/>
+<connect gate="-" pin="TP" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

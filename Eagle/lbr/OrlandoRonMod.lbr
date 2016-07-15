@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2853,24 +2853,27 @@ Source: www.ilsiamerica.com .. C1 IXF Series.pdf</description>
 <rectangle x1="1.5748" y1="-0.3302" x2="2.2352" y2="0.3302" layer="51"/>
 </package>
 <package name="OESIP14">
-<smd name="1" x="0.19" y="5.08" dx="0.6" dy="0.35" layer="1"/>
-<wire x1="-0.3" y1="-0.25" x2="2.85" y2="-0.25" width="0.127" layer="20"/>
-<wire x1="2.85" y1="-0.25" x2="2.85" y2="5.6" width="0.127" layer="21"/>
-<wire x1="2.85" y1="5.6" x2="-0.3" y2="5.6" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="5.6" x2="-0.3" y2="-0.25" width="0.127" layer="21"/>
-<smd name="2" x="0.19" y="4.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="3" x="0.19" y="3.48" dx="0.6" dy="0.35" layer="1"/>
-<smd name="4" x="0.19" y="2.68" dx="0.6" dy="0.35" layer="1"/>
-<smd name="5" x="0.19" y="1.88" dx="0.6" dy="0.35" layer="1"/>
-<smd name="6" x="0.19" y="1.08" dx="0.6" dy="0.35" layer="1"/>
-<smd name="7" x="0.19" y="0.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="8" x="2.34" y="0.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="9" x="2.34" y="1.08" dx="0.6" dy="0.35" layer="1"/>
-<smd name="10" x="2.34" y="1.88" dx="0.6" dy="0.35" layer="1"/>
-<smd name="11" x="2.34" y="2.68" dx="0.6" dy="0.35" layer="1"/>
-<smd name="12" x="2.34" y="3.48" dx="0.6" dy="0.35" layer="1"/>
-<smd name="13" x="2.34" y="4.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="14" x="2.34" y="5.08" dx="0.6" dy="0.35" layer="1"/>
+<smd name="1" x="-1.08" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<wire x1="-1.57" y1="-2.79" x2="1.58" y2="-2.79" width="0.127" layer="21"/>
+<wire x1="1.58" y1="-2.79" x2="1.58" y2="3.06" width="0.127" layer="21"/>
+<wire x1="1.58" y1="3.06" x2="-1.57" y2="3.06" width="0.127" layer="21"/>
+<wire x1="-1.57" y1="3.06" x2="-1.57" y2="-2.79" width="0.127" layer="21"/>
+<smd name="2" x="-1.08" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="3" x="-1.08" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="4" x="-1.08" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="5" x="-1.08" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="6" x="-1.08" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="7" x="-1.08" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="8" x="1.07" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="9" x="1.07" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="10" x="1.07" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="11" x="1.07" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="12" x="1.07" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="13" x="1.07" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="14" x="1.07" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<rectangle x1="-0.508" y1="1.778" x2="0.508" y2="2.794" layer="21"/>
+<text x="-1.778" y="3.302" size="0.762" layer="25">&gt;Name</text>
+<text x="-1.778" y="-3.81" size="0.762" layer="25">&gt;Value</text>
 </package>
 <package name="CA-301">
 <pad name="1" x="0" y="0" drill="0.4" shape="octagon"/>
@@ -4581,6 +4584,8 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="GND" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="INT" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="NC14" x="17.78" y="5.08" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 <symbol name="Q">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>

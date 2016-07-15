@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2833,8 +2833,12 @@ Source: www.ilsiamerica.com .. C1 IXF Series.pdf</description>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 <package name="HOLE">
-<pad name="P$1" x="-1.151" y="0" drill="0.7112"/>
-<pad name="P$2" x="1.135" y="0" drill="0.7112"/>
+<pad name="P$1" x="-1.151" y="0" drill="1.016" diameter="1.778"/>
+<pad name="P$2" x="1.135" y="0" drill="1.016" diameter="1.778"/>
+<text x="-2.54" y="1.27" size="0.762" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.905" size="0.762" layer="27">&gt;VALUE</text>
+<text x="-3.175" y="0" size="1.016" layer="21">+</text>
+<text x="2.54" y="0" size="1.016" layer="21">-</text>
 </package>
 <package name="P2-38-17">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
@@ -2849,28 +2853,33 @@ Source: www.ilsiamerica.com .. C1 IXF Series.pdf</description>
 <rectangle x1="1.5748" y1="-0.3302" x2="2.2352" y2="0.3302" layer="51"/>
 </package>
 <package name="OESIP14">
-<smd name="1" x="0.19" y="5.08" dx="0.6" dy="0.35" layer="1"/>
-<wire x1="-0.3" y1="-0.25" x2="2.85" y2="-0.25" width="0.127" layer="20"/>
-<wire x1="2.85" y1="-0.25" x2="2.85" y2="5.6" width="0.127" layer="21"/>
-<wire x1="2.85" y1="5.6" x2="-0.3" y2="5.6" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="5.6" x2="-0.3" y2="-0.25" width="0.127" layer="21"/>
-<smd name="2" x="0.19" y="4.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="3" x="0.19" y="3.48" dx="0.6" dy="0.35" layer="1"/>
-<smd name="4" x="0.19" y="2.68" dx="0.6" dy="0.35" layer="1"/>
-<smd name="5" x="0.19" y="1.88" dx="0.6" dy="0.35" layer="1"/>
-<smd name="6" x="0.19" y="1.08" dx="0.6" dy="0.35" layer="1"/>
-<smd name="7" x="0.19" y="0.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="8" x="2.34" y="0.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="9" x="2.34" y="1.08" dx="0.6" dy="0.35" layer="1"/>
-<smd name="10" x="2.34" y="1.88" dx="0.6" dy="0.35" layer="1"/>
-<smd name="11" x="2.34" y="2.68" dx="0.6" dy="0.35" layer="1"/>
-<smd name="12" x="2.34" y="3.48" dx="0.6" dy="0.35" layer="1"/>
-<smd name="13" x="2.34" y="4.28" dx="0.6" dy="0.35" layer="1"/>
-<smd name="14" x="2.34" y="5.08" dx="0.6" dy="0.35" layer="1"/>
+<smd name="1" x="-1.08" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<wire x1="-1.57" y1="-2.79" x2="1.58" y2="-2.79" width="0.127" layer="21"/>
+<wire x1="1.58" y1="-2.79" x2="1.58" y2="3.06" width="0.127" layer="21"/>
+<wire x1="1.58" y1="3.06" x2="-1.57" y2="3.06" width="0.127" layer="21"/>
+<wire x1="-1.57" y1="3.06" x2="-1.57" y2="-2.79" width="0.127" layer="21"/>
+<smd name="2" x="-1.08" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="3" x="-1.08" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="4" x="-1.08" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="5" x="-1.08" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="6" x="-1.08" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="7" x="-1.08" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="8" x="1.07" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="9" x="1.07" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="10" x="1.07" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="11" x="1.07" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="12" x="1.07" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="13" x="1.07" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="14" x="1.07" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<rectangle x1="-0.508" y1="1.778" x2="0.508" y2="2.794" layer="21"/>
+<text x="-1.778" y="3.302" size="0.762" layer="25">&gt;Name</text>
+<text x="-1.778" y="-3.81" size="0.762" layer="25">&gt;Value</text>
 </package>
 <package name="CA-301">
 <pad name="1" x="0" y="0" drill="0.4" shape="octagon"/>
 <pad name="2" x="1.2" y="0" drill="0.4" shape="octagon"/>
+<text x="-1.27" y="1.27" size="0.635" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.905" size="0.635" layer="25">&gt;Value</text>
 </package>
 <package name="HC49/S">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
@@ -6957,14 +6966,14 @@ Source: www.vanlong.com</description>
 </deviceset>
 <deviceset name="BATT-CONNECT">
 <gates>
-<gate name="G$2" symbol="PS" x="5.08" y="2.54"/>
-<gate name="G$1" symbol="PS" x="-5.08" y="2.54"/>
+<gate name="-" symbol="PS" x="5.08" y="2.54"/>
+<gate name="+" symbol="PS" x="-5.08" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="HOLE">
 <connects>
-<connect gate="G$1" pin="TP" pad="P$1"/>
-<connect gate="G$2" pin="TP" pad="P$2"/>
+<connect gate="+" pin="TP" pad="P$1"/>
+<connect gate="-" pin="TP" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
