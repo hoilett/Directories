@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -4603,9 +4603,9 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <text x="-2.54" y="-3.81" size="1.016" layer="25">&gt;Value</text>
 </package>
 <package name="LED-1206-BOTTOM">
-<wire x1="-2.254" y1="0.4" x2="-2.254" y2="-0.4" width="0.127" layer="49"/>
-<wire x1="-2.654" y1="0" x2="-1.854" y2="0" width="0.127" layer="49"/>
-<wire x1="1.854" y1="0" x2="2.654" y2="0" width="0.127" layer="49"/>
+<wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
+<wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
+<wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
 <wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.127" layer="49"/>
 <wire x1="-0.381" y1="0" x2="-0.381" y2="0.635" width="0.127" layer="49"/>
 <wire x1="-0.381" y1="0.635" x2="0.254" y2="0" width="0.127" layer="49"/>
@@ -4614,12 +4614,16 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="0.254" y1="0" x2="0.254" y2="0.635" width="0.127" layer="49"/>
 <wire x1="0.254" y1="0" x2="0.254" y2="-0.635" width="0.127" layer="49"/>
 <wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.127" layer="49"/>
-<smd name="A" x="-2.286" y="0" dx="1.5" dy="1.6" layer="1"/>
-<smd name="C" x="2.286" y="0" dx="1.5" dy="1.6" layer="1"/>
-<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="1.27" layer="20"/>
-<text x="-1.016" y="0.762" size="0.5" layer="20">Cutout</text>
-<text x="-2.54" y="1.905" size="0.762" layer="25">&gt;Name</text>
-<text x="-2.54" y="-2.54" size="0.762" layer="27">&gt;Value</text>
+<smd name="A" x="-1.8415" y="0" dx="1.5" dy="1.6" layer="1"/>
+<smd name="C" x="1.8415" y="0" dx="1.5" dy="1.6" layer="1"/>
+<text x="-2.54" y="1.651" size="0.762" layer="25">&gt;Name</text>
+<text x="-2.54" y="-2.3495" size="0.762" layer="27">&gt;Value</text>
+<hole x="0" y="0" drill="2.667"/>
+<wire x1="-1.05" y1="1.15" x2="1.05" y2="1.15" width="0.0254" layer="21"/>
+<wire x1="1.05" y1="1.15" x2="1.05" y2="-1.15" width="0.0254" layer="21"/>
+<wire x1="1.05" y1="-1.15" x2="-1.05" y2="-1.15" width="0.0254" layer="21"/>
+<wire x1="-1.05" y1="-1.15" x2="-1.05" y2="1.15" width="0.0254" layer="21"/>
+<wire x1="1.7656" y1="1.2446" x2="2.0068" y2="1.2446" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
